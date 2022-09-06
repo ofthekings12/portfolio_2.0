@@ -29,7 +29,7 @@ const Navbar = () => {
             ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
-            <ul className="app__navbar-links">
+            <ul>
             {["home", "about", "contact", "work", "skills"].map((item) => (
               <li key={item}>
                 <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
