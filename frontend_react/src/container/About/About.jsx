@@ -7,7 +7,7 @@ const abouts = [
   { title: "Web Development", description: "I am a good developer", imgUrl: images.about01},
   { title: "web Design", description: "I am a good developer", imgUrl: images.about02},
   { title: "UI/UX", description: "I am a good developer", imgUrl: images.about03},
-  { title: "Full Stack", description: "I am a good developer", imgUrl: images.about0104},
+  { title: "Full Stack", description: "I am a good developer", imgUrl: images.about04},
 ]
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
       <span>Good Business</span>
     </h2>
 
-    <div className="app__profile">
+    <div className="app__profiles">
     {abouts.map((about, index) => (
       <motion.div
       whileInView={{ opacity: 1 }}
