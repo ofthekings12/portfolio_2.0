@@ -30,7 +30,7 @@ client.fetch(query)
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portoflio</span>
+        My Creative <span>Portfolio</span>
         <br /> Section
       </h2>
       <div className="app__work-filter">
