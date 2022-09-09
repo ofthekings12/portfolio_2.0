@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
-import { images } from '../../constants';
 import { urlFor, client } from '../../client';
+import { AppWrap } from '../../wrapper';
 
-const abouts = [
-  { title: "Web Development", description: "I am a good developer", imgUrl: images.about01},
-  { title: "web Design", description: "I am a good developer", imgUrl: images.about02},
-  { title: "UI/UX", description: "I am a good developer", imgUrl: images.about03},
-  { title: "Full Stack", description: "I am a good developer", imgUrl: images.about04},
-]
 
 const About = () => {
 
@@ -46,4 +40,4 @@ useEffect(() => {
   )
 }
 
-export default About
+export default AppWrap(About, 'about');
