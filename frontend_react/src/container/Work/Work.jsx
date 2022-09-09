@@ -34,7 +34,7 @@ client.fetch(query)
         <br /> Section
       </h2>
       <div className="app__work-filter">
-        {["Ui/Ux", "Web App", "Mobile App", "React App"].map((item, index) => (
+        {["Ui/Ux", "Web App", "Mobile App", "React App", 'All'].map((item, index) => (
           <div key={index} 
           onClick={() => handleWorkFilter(item)} 
           className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : '' }`}>{item}</div>
