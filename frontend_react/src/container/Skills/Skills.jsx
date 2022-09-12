@@ -42,8 +42,9 @@ const [skills, setSkills] = useState([]);
             <div className="app__flex"
             style={{ backgroundColor: skill.bgColor }}>
               <img src={urlFor(skill.icon)} alt={skill.name}/>
-              <p className="p-text">{skill.name}</p>
+             
             </div>
+            <p className="p-text">{skill.name}</p>
 
 
           </motion.div>
