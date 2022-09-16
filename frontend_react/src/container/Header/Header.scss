@@ -58,6 +58,7 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
+    background-color: var(--white-color);
     box-shadow: 0 0 20px rgba(0 , 0, 0, 0.1);
   }
 
@@ -125,6 +126,12 @@
     height: 70px;
   }
 
+  div:nth-child(4) {
+    margin: 1.95rem;
+    width: 100px;
+    height: 100px;
+  }
+
   @media screen and (min-width: 2000px) {
     div:nth-child(1) {
       width: 400px;
@@ -140,6 +147,10 @@
     div:nth-child(3) {
       width: 200px;
       height: 200px;
+    }
+    div:nth-child(4) {
+      width: 65px;
+      height: 65px;
     }
   }
   @media screen and (max-width: 1200px) {

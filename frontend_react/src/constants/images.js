@@ -9,6 +9,7 @@ import javascript from '../assets/javascript.png';
 import node from '../assets/node.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
+import sql from '../assets/sql.png'
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -29,6 +30,7 @@ const images = {
   mobile,
   api,
   css,
+  sql,
   figma,
   git,
   html,
