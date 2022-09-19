@@ -19,7 +19,7 @@ useEffect(() => {
 
   return (
     <>
-    <h2 className='head-text'>First Time <span>Developer</span><br /> Long Time <span>Creative</span>
+    <h2 className='head-text'>First Time <span>Developer</span><br /> Long Time <span>Creator</span>
     </h2>
 
     <div className="app__profiles">

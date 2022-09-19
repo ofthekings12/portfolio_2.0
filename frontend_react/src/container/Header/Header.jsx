@@ -35,7 +35,7 @@ const Header = () => {
 
           <div className="tag-cmp app__flex">
             <p className="p-text">Full Stack Developer</p>
-            <p className="p-text">Artist</p>
+            <p className="p-text">Toronto, ON 📍</p>
           </div>
         </div>
       </motion.div>
@@ -60,7 +60,7 @@ const Header = () => {
       whileInView={scaleVariants.whileInView}
       className='app__header-circles'
       >
-        {[images.css, images.react, images.node, images.sql].map((circle, index) => (
+        {[images.javascript, images.react, images.sql, images.node].map((circle, index) => (
           <div
           className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle"/>
