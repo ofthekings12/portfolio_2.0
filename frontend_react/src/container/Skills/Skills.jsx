@@ -22,7 +22,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <h2 className="head-text">Skills & Experience</h2>
 
       <div className="app__skills-container">
@@ -38,7 +38,7 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+                <img src={urlFor(skill.icon)} alt={skill.name}/>
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
@@ -51,8 +51,8 @@ const Skills = () => {
                 <p className="bold-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
-                {experience.works.map((work) => (
-                  <>
+                {experience.works.map((work,key) => (
+                  <div key={key}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
@@ -69,17 +69,18 @@ const Skills = () => {
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
+                    
                     >
                       {work.desc}
                     </ReactTooltip>
-                  </>
+                  </div>
                 ))}
               </motion.div>
             </motion.div>
           ))}
         </motion.div>
       </div>
-    </>
+    </div>
   );
 };
 
