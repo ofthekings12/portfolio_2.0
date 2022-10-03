@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Work.scss";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
@@ -40,7 +40,7 @@ client.fetch(query)
     <>
       <h2 className="head-text">
         My Creative <span>Portfolio</span>
-        <br /> Section
+        <br />
       </h2>
       <div className="app__work-filter">
         {["ReactJS", "NextJS", 'All'].map((item, index) => (
@@ -62,7 +62,7 @@ client.fetch(query)
       whileHover={{opacity: [0, 1]}}
       transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5}}
       className='app__work-hover app__flex'>
-        <a href={work.projectLink} target="_blank" rel="noreferrer">
+        {/* <a href={work.projectLink} target="_blank" rel="noreferrer">
           <motion.div
           whileInView={{scale: [0, 1]}}
                 whileHover={{scale: [1, 0.9]}}
@@ -71,7 +71,7 @@ client.fetch(query)
           >
             <AiFillEye/>
           </motion.div>
-        </a>
+        </a> */}
         <a href={work.codeLink} target="_blank" rel="noreferrer">
           <motion.div
           whileInView={{scale: [0, 1]}}
